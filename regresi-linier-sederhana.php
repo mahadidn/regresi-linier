@@ -1,5 +1,8 @@
 <?php
 
+// kode php regresi linier sederhana untuk memprediksi stok obat berdasarkan rentang waktu
+
+
 // inisialisasi variabel
     $X = [];
     $Y = [];
@@ -24,8 +27,8 @@
         $i = 0;
         foreach ($hasil_arsip as $key => $value) {
             
-            $X[$i] = (int)$value['nama_bulan'];
-            $Y[$i] = (int)$value['stok'];
+            $X[$i] = (int)$value['nama_bulan']; // X adalah variabel independen yaitu nama_bulan
+            $Y[$i] = (int)$value['stok'];       // Y adalah variabel dependen yaitu stok
     
             $Xbar = $Xbar + $X[$i];
             $Ybar = $Ybar + $Y[$i];
